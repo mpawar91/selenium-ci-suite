@@ -15,7 +15,7 @@ def pytest_configure(config):
     config.addinivalue_line("markers", "ui: visual/layout checks")
     config.addinivalue_line("markers", "functional: full user flow tests")
 
-
+#this is a fixture for chrome driver
 @pytest.fixture(scope="session")
 def driver():
     options = Options()
